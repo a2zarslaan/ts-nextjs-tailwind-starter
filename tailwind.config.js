@@ -12,6 +12,7 @@ function withOpacity(variableName) {
 
 /** @type {import("@types/tailwindcss/tailwind-config").TailwindConfig } */
 module.exports = {
+  mode: 'jit',
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
