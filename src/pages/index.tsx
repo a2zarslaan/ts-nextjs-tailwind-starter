@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import Header from '@/components/Header';
 import Layout from '@/components/layout/Layout';
 import Seo from '@/components/Seo';
 
@@ -13,12 +14,12 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
+      <Header />
+      
       <main>
-        <section className='bg-white'>
-          <div className='layout flex flex-col justify-center items-center min-h-screen text-center'>
-            <h1>Facebook 2.0</h1>
-          </div>
-        </section>
+        {/* Sidebar */}
+        {/* Feed */}
+        {/* Widgets */}
       </main>
     </Layout>
   );
