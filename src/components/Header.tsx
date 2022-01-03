@@ -1,14 +1,18 @@
 import {
-  SearchIcon
-} from "@heroicons/react/outline"
+  FlagIcon,
+  HomeIcon,
+  PlayIcon,
+  SearchIcon,
+  ShoppingCartIcon,
+  UserGroupIcon} from "@heroicons/react/outline"
 import Image from "next/image";
 import React from 'react';
 
+import HeaderIcon from '@/components/HeaderIcon';
+
 function Header() {
   return (
-    <div>
-      <h1>header</h1>
-
+    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
       <div className="flex items-center">
         <Image 
           src="https://i.imgur.com/VgkNYXI.png"
@@ -23,6 +27,15 @@ function Header() {
       </div>
 
       {/* center */}
+      <div className="flex justify-center flex-grow">
+        <div className="flex space-x-6 md:space-x-2">
+          <HeaderIcon Icon={HomeIcon} />
+          <HeaderIcon Icon={FlagIcon} />
+          <HeaderIcon Icon={PlayIcon} />
+          <HeaderIcon Icon={ShoppingCartIcon} />
+          <HeaderIcon Icon={UserGroupIcon} />
+        </div>
+      </div>
 
       {/* right */}
     </div>
