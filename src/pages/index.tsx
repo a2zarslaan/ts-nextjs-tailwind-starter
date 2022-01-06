@@ -5,6 +5,7 @@ import Header from '@/components/Header';
 import Layout from '@/components/layout/Layout';
 import Login from '@/components/Login';
 import Seo from '@/components/Seo';
+import Sidebar from '@/components/Sidebar';
 
 // !STARTERCONF -> Select !STARTERCONF and CMD + SHIFT + F
 // Before you begin editing, follow all comments with `STARTERCONF`,
@@ -19,8 +20,9 @@ export default function HomePage({session}: {session:any}) {
 
       <Header />
       
-      <main>
+      <main className="flex">
         {/* Sidebar */}
+        <Sidebar/>
         {/* Feed */}
         {/* Widgets */}
       </main>
